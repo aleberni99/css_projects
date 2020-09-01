@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 body {
-    background-image: url("pattern3.jpg");
+    background-image: url("pattern-bg.jpg");
     background-size: contain;
     display: flex;
     justify-content: center;
