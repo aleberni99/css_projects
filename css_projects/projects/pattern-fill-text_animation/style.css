@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #4e004e;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 150px;
+    font-family: "Arial Black";
+    font-size: 11em;
+    line-height: 1em;
+    text-transform: uppercase;
+    background: url(pattern2.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}

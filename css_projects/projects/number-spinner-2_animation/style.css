@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #505050;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 5px !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+input:hover,
+input:focus {
+    background: #ff008b;
+    color: #fff;
+}
+
+button {
+    background: #262626;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+button:hover {
+    background: #ff008b;
+}

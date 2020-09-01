@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    background: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+
+a span {
+    font-size: 20px;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40px;
+    background: #000;
+    transition: .5s;
+    transform: skewX(-15deg);
+    animation: animate 2s linear infinite;
+}
+
+a:hover::before {
+    width: 100%;
+    transform: skewX(0deg);
+    animation: none;
+}
+
+@keyframes animate {
+    0% {
+        left: -40px;
+    }
+
+    100% {
+        left: calc(100% + 10px);
+    }
+}

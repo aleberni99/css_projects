@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background: #262626;
+}
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(particles.png);
+}
+
+.particles.particles1 {
+    animation: animate 11s linear infinite;
+}
+.particles.particles2 {
+    animation: animate 12s reverse infinite;
+}
+.particles.particles3 {
+    animation: animate2 13s linear infinite;
+}
+.particles.particles4 {
+    animation: animate2 14s reverse infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: 400px 400px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position: 50px 0px;
+    }
+
+    100% {
+        background-position: 450px 0px;
+    }
+}

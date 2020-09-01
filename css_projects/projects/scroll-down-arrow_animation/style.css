@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #00567d;
+}
+
+.down {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #00567d;
+    background: #04a9f5;
+    box-shadow: 0 0 0 5px #fff, 0 5px 25px rgba(0, 0, 0, .8);
+    overflow: hidden;
+}
+
+.down::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+}
+
+.down .icon {
+    font-size: 60px;
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    color: #fff;
+    animation: animate 1.5s linear infinite;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+@keyframes animate {
+    0% {
+        top: -10%;
+    }
+
+    40% {
+        top: 70%;
+    }
+
+    60% {
+        top: 30%;
+    }
+
+    80% {
+        top: 70%;
+    }
+
+    100% {
+        top: 110%;
+    }
+}

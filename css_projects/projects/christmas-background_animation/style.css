@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #1c547d;
+    overflow: hidden;
+    animation: bgAnimate 15s linear infinite;
+}
+
+.box .tree {
+    position: absolute;
+    bottom: -131px;
+    width: 100%;
+    height: 100%;
+}
+
+.box .tree.tree1 {
+    background-image: url(tree1.png);
+    background-repeat: repeat-x;
+    animation: animate 15s linear infinite;
+    z-index: 3;
+}
+
+.box .tree.tree2 {
+    background-image: url(tree2.png);
+    background-repeat: repeat-x;
+    animation: animate 25s linear infinite;
+}
+
+.box .tree.tree3 {
+    background-image: url(tree3.png);
+    background-repeat: repeat-x;
+    animation: animate 45s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 1406px 0;
+    }
+}
+
+.box .snow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(snow.png);
+    z-index: 4;
+    animation: snow 15s linear infinite;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 768px;
+    }
+}
+
+h1 {
+    font-size: 8em;
+    margin: 20px 0 0;
+    padding: 0;
+    text-align: center;
+    animation: colorAnimate 15s linear infinite;
+}
+
+@keyframes bgAnimate {
+    0% {
+        background: rgba(65, 131, 215, 1);
+    }
+
+    25% {
+        background: rgba(58, 83, 155, 1);
+    }
+
+    50% {
+        background: rgba(44, 130, 201, 1);
+    }
+
+    75% {
+        background: rgba(58, 83, 155, 1);
+    }
+
+    100% {
+        background: rgba(65, 131, 215, 1);
+    }
+}
+
+@keyframes colorAnimate {
+    0% {
+        color: rgba(65, 131, 215, 1);
+    }
+
+    25% {
+        color: rgba(58, 83, 155, 1);
+    }
+
+    50% {
+        color: rgba(44, 130, 201, 1);
+    }
+
+    75% {
+        color: rgba(58, 83, 155, 1);
+    }
+
+    100% {
+        color: rgba(65, 131, 215, 1);
+    }
+}

@@ -1,0 +1,68 @@
+/* --- Variables --- */
+
+:root {
+    --theme-color: #00f;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.swatches,
+.changes {
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+.swatches span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid #bbb;
+}
+
+.changes span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tabella {
+    width: 408px;
+    height: 408px;
+    /* background: #262626; */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cubo {
+    width: 100px;
+    height: 100px;
+    background: #262626;
+    border: 1px solid #bbb;
+}
+
+.cubo:hover {
+    width: 100px;
+    height: 100px;
+    background: var(--theme-color);
+}

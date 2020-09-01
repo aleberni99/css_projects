@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Legenda CSS</title>
+
+        <style type="text/css">
+            body {
+                background-color: rgba(0, 100, 100, 0.8);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column;
+            }
+
+            h2 {
+                color: white;
+                text-align: center;
+            }
+
+            h4 {
+                color: white;
+                text-align: center;
+            }
+
+            .row {
+                display: flex;
+            }
+
+            .column {
+                flex: 50%;
+            }
+
+            @media only screen and (max-width: 1100px) {
+                div.row {
+                    display: inline;
+                }
+            }
+
+            .casella {
+                border: 1px solid white;
+                padding: 10px;
+                margin: 5px;
+                width: 700px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                align-items: center;
+            }
+
+            .items {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                align-items: center;
+            }
+
+            span {
+                float: right;
+                text-align: right;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .casella:hover {
+                background-color: white;
+                cursor: pointer;
+            }
+
+            .casella:hover a {
+                color:rgba(0, 100, 100, 0.8);
+            }
+
+            .casella:hover .items {
+                color:rgba(0, 100, 100, 0.8);
+            }
+
+            .casella:hover span {
+                color:rgba(0, 100, 100, 0.8);
+            }
+
+            .casella:hover img {
+                transform: scale(1.1);
+            }
+
+            /* .exterior {
+                display: block;
+            } */
+
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+                padding-right: 5%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h2>ALESSIA PROGETTI & CORSI </h2>
+        <h4>Seleziona un progetto...</h4>
+        <div class="row">
+            <div class="column">
+                <h4 style="color: #262626; font-size: 24px;">PROGETTI CORSO CSS & SCSS</h4>
+                <!-- 
+                    https://www.toptal.com/designers/htmlarrows/symbols/
+                    
+                    CHECK: &#9745; oppure &check; oppure &#10004;
+                    X: &#9746; oppure &#10005; oppure &#10006; oppure &#10007; oppure &#10008;
+                    STELLA: &star; oppure &starf; oppure &#10025; oppure &#10026;
+                    SMILE: &#9786; oppure &#9787;
+                    SAD: &#9785;
+                    WARNING: &#9888;
+                    PENCIL: &#9998;
+                -->
+                <div onclick="window.open('natours_corso/index.html', '_blank')" class="casella exterior">
+                    <div class="items">
+                        <img src="img/natours.png"> Natours Website &nbsp;- &nbsp; <a href="https://www.udemy.com/share/101WkwA0YaeVdRQno=/" target="_blank"> Udemy Course </a>
+                    </div>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('trillo_corso/index.html', '_blank')" class="casella exterior">
+                    <div class="items">
+                        <img src="img/trillo.png"> Trillo Website &nbsp;- &nbsp; <a href="https://www.udemy.com/share/101WkwA0YaeVdRQno=/" target="_blank"> Udemy Course </a>
+                    </div>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('ex-grid_corso/index.html', '_blank')" class="casella exterior">
+                    <div class="items">
+                        <img src="img/grid.png"> Example Grid &nbsp;- &nbsp; <a href="https://www.udemy.com/share/101WkwA0YaeVdRQno=/" target="_blank"> Udemy Course </a>
+                    </div>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('nexter_corso/index.html', '_blank')" class="casella exterior">
+                    <div class="items">
+                        <img src="img/nexter.png"> Nexter Website &nbsp;- &nbsp; <a href="https://www.udemy.com/share/101WkwA0YaeVdRQno=/" target="_blank"> Udemy Course </a>
+                    </div>
+                    <span>&rarr;</span>
+                </div>
+        
+                <h4 style="color: #262626; font-size: 24px;">PROGETTI The Net Ninja YouTube</h4>
+                <div onclick="window.open('mario_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/mario.png">  Mario Animation - </a><a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank"> The Net Ninja YouTube</a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('basket_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/basket.png">  Basket Animation - </a><a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank"> The Net Ninja YouTube</a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('pop-up_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/popup-caduta.png">  Pop-up "caduta" Animation - </a><a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank"> The Net Ninja YouTube</a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('rotate-card_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/rotate-card.png">  Rotate Card Animation - </a><a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank"> The Net Ninja YouTube</a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('christmas-lights_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/christmas-lights.png">  Christmas Lights Animazione </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('burger-icon_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/icona-hamburger.png">  Icona Hamburger Animazione </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('only-tooltip_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/tooltip.png">  Tooltip Animazione </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('only-dropdown-menu_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/dropdown-menu.png">  Dropdown Menu Animazione </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('only-popup_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/popup-comparsa.png">  Pop-up "comparsa" Animazione </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('snowy_JSanimation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/snow-js.png"> Snow JS-Animazione </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('css-variables/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/css-variabili.png"> CSS Variabili </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('bikes_youtube/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/bikes.png"> Sito Bikes </a>
+                    <span>&rarr;</span>
+                </div>
+            
+
+
+                <h4 style="color: #262626; font-size: 24px;">PROGETTI Online Tutorials YouTube</h4>
+                <div onclick="window.open('neon-button_animation/index.html', '_blank')" class="casella exterior">
+                    <div class="items">
+                        <img src="img/neon-button.png"> Neon Button Animation &nbsp;- &nbsp; <a href="https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog" target="_blank"> Online Tutorials Youtube </a>
+                    </div>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('wavy-circle-loader_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/wavy-circle.png"> 3D Wavy Circle Loader Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('paper-rotation_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/3d-rotation.png"> 3D Rotation Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('eyes-follow-cursor_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/eyes-follow.png"> Eyes Follow Cursor JS-Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('elastic-line_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/elastic-line.png"> Elastic Line Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('infinite-road_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/infinite-road.png"> Infinite Road Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('gradient-shadow_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/gradient-shadow.png"> Gradient Shadow Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('background-pulse_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/background-pulse.png"> Background Pulse Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('leaves_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/leaves.png"> Leaves Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('rain-lighting_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/rain.png"> Rain Lighting Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('cloud_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/cloud.png"> Cloud Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('water-fill-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/water-fill.png"> Water fill text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('pencil-loader_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/pencil-loader.png"> Pencil Loader Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('sky-moving_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/sky-moving.png"> Sky Moving Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('gradient-border/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/gradient-border.png"> Gradient Border </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('tubelight-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/tubelight-text.png"> Tubelight Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('loading-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/loading-text.png"> Loading Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('glowing-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/glowing-text.png"> Glowing Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('scroll-down_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/arrow-scroll.png"> Arrow Scroll Down Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('moving-background_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/rotation-loader.png"> Rotation Loader Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('text-reveal_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/text-reveal.png"> Text Reveal Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('arrow-sign-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/arrow-sign.png"> Arrow Sign Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('cube-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/cube-loading.png"> Cube Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('background-cube-pulse_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/cube-pulse.png"> Background Cube Pulse Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('mouse-scroll-down_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/mouse-scroll.png"> Mouse Scroll Down Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('change-text-color_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/change-color.png"> Change Text Color Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('squares-preloader_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/squares-preloader.png"> Squares Preloader Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('music-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/music-loading.png"> Music Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('tennis-ball_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/tennis-ball.png"> Tennis Ball Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('pulse-effect-button_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/button-pulse.png"> Pulse Effect Button Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('floating-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/floating-text.png"> Floating Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('fractured-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/fractured-text.png"> Fractured Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('rainbow_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/rainbow.png"> Rainbow Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('thin-ring-loader_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/ring-loader.png"> Thin Ring Loader Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('heart-beat_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/heart-beat.png"> Heart Beat Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('rotating-wheel_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/rotating-wheel.png"> Rotating Wheel Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('simple-loader_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/simple-loader.png"> Simple Loader Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('falling-surface_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/falling-surface.png"> Falling Surface Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('cogwheel_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/cogwheel.png"> Cogwheel Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('scrolling-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/scrolling-text.png"> Scrolling Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('text-highlight-reveal_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/text-highlight-reveal.png"> Text Highlight Reveal Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('elastic-loading-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/elastic-loading-text.png"> Elastic Loading Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('dots-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/dots-loading.png"> Dots Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('changing-background-color_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/changing-background-color.png"> Change Background Color Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('progress-bar_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/progress-bar.png"> Progress Bar Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('changing-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/changing-text.png"> Changing Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('line-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/line-loading.png"> Line Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('floating-text-shadow_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/floating-text-shadow.png"> Floating Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('pattern-fill-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/pattern-fill-text.png"> Pattern Fill Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('liquid-fill-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/liquid-fill-text.png"> Liquid Fill Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('bouncing-pokeball_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/bouncing-pokeball.png"> Bouncing Pokeball Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('snow-falling_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/snow-falling.png"> Snow Falling Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('box-shadow-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/box-shadow-loading.png"> Box Shadow Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('sliding-ball_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/sliding-ball.png"> Sliding Ball Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('tea-cup_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/tea-cup.png"> Tea Cup Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('jumping-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/jumping-text.png"> Jumping Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('flower-of-life_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/flower-of-life.png"> Flower of Life Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('different-forms-loader_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/different-forms-loader.png"> Different Forms Loader Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('heart-shape_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/heart-shape.png"> Heart Shape Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('coming-call_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/coming-call.png"> Coming Call Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('sprite-image_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/sprite-image.png"> Sprite Image Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('progress-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/progress-loading.png"> Progress Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('word-rotator_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/word-rotator.png"> Word Rotator Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('man-walking-world_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/man-walking-world.png"> Man Walking Around the World Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('button-hover_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/button-hover.png"> Button Hover Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('smoke_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/smoke.png"> Smoke Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('border-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/border-loading.png"> Border Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('rainbow-stripes_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/rainbow-stripes.png"> Rainbow Stripes Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('clock-shape_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/clock-shape.png"> Clock Shape Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('skyline_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/skyline.png"> Skyline Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('glowing-map_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/glowing-map.png"> Glowing Map Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('circle-logo_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/circle-logo.png"> Circle Logo Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('sprinkles-pattern_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/sprinkles-pattern.png"> Sprinkles Pattern Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('green-radar_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/green-radar.png"> Green Radar Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('location-pointer_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/location-pointer.png"> Location Pointer Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('slide-loading-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/slide-loading-text.png"> Slide Loading Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('liquid-fill-cup_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/liquid-fill-cup.png"> Liquid Fill Cup Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('twinkles_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/twinkles.png"> Twinkles Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('sliding-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/sliding-text.png"> Sliding Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('water-wave-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/wave-water-loading.png"> Water Wave Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('scroll-down-arrow_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/scroll-down-arrow.png"> Scroll Down Arrow Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('glowing-circle-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/glowing-circle-loading.png"> Glowing Circle Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('happy-candle_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/happy-candle.png"> Happy Candle Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('2dots-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/2dots-loading.png"> 2 Dots Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('4dots-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/4dots-loading.png"> 4 Dots Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('line-dots-glowing_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/line-dots-glowing.png"> Line Dots Glowing Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('isometric-lava-logo_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/isometric-lava-logo.png"> Isometric Lava Logo Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('glowing-loader-ring_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/glowing-loader-ring.png"> Glowing Loader Ring Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('slit-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/slit-text.png"> Slit Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('flip-card-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/flip-card-loading.png"> Flip Card Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('blocks-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/blocks-loading.png"> Blocks Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('neon-light-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/neon-light-text.png"> Neon Light Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('spiral-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/spiral-loading.png"> Spiral Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('slot-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/slot-loading.png"> Slot Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('glowing-button_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/glowing-button.png"> Glowing Button Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('google-logo/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/google-logo.png"> Google Logo </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('button-hover2_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/button-hover2.png"> Button Hover 2 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('cloud-and-sun_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/cloud-and-sun.png"> Cloud and Sun Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('flip-dots-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/flip-dots-loading.png"> Flip Dots Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('folding-cube_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/folding-cube.png"> Folding Cube Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('breathing_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/breathing.png"> Breathing Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('moving-particles_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/moving-particles.png"> Moving Particles Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('timeline-design/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/timeline-design.png"> Timeline Design </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('rotation-dots_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/rotation-dots.png"> Rotation Dots Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('testimonials-box-design/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/testimonials-box-design.png"> Testimonials Box Design Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('3D-button-hover_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/3D-button-hover.png"> 3D Button Hover Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('icon-hover_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/icon-hover.png"> Icon Hover Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('jumping-text2_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/jumping-text2.png"> Jumping Text 2 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('christmas-background_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/christmas-background.png"> Christmas Background Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('energy-button_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/energy-button.png"> Energy Button Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('scroll-down2_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/scroll-down2.png"> Scroll Down 2 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('skills-bar_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/skills-bar.png"> Skills Bar Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('colorful-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/colorful-loading.png"> Colorful Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('square-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/square-loading.png"> Square Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('underline-text-hover_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/underline-text-hover.png"> Underline Text Hover Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('flag_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/flag.png"> Flag Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('fast-dots_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/fast-dots.png"> Fast Dots Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('diamond_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/diamond.png"> Diamond Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('floor-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/floor-loading.png"> Floor Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('colorful-spinner_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/colorful-spinner.png"> Colorful Spinner Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('button-hover3_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/button-hover3.png"> Button Hover 3 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('glitch-photo_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/glitch-photo.png"> Glitch Photo Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('fine-scroll-down_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/fine-scroll-down.png"> Fine Scroll Down Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('asterisk-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/asterisk-loading.png"> Asterisk Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('moon-earth-rotation_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/moon-earth-rotation.png"> Moon - Earth Rotation Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('marquee-text_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/marquee-text.png"> Marquee Text Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('bouncing-loader_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/bouncing-loader.png"> Bouncing Loader Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('explosion-hover_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/explosion-hover.png"> Explosion Hover Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('reverse-pulse_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/reverse-pulse.png"> Reverse Pulse Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('square-rotation-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/square-rotation-loading.png"> Square Rotation Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('split-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/split-loading.png"> Split Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('image-change_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/image-change.png"> Image Change Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('glowing-circle_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/glowing-circle.png"> Glowing Circle Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('fish-bowl_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/fish-bowl.png"> Fish Bowl Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('gradient-border2_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/gradient-border2.png"> Gradient Border Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('mac-spinning_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/mac-spinning.png"> Mac Spinning Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('contact-box_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/contact-box.png"> Contact Box Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('showing-text-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/showing-text-loading.png"> Showing Text Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('typing-text-loading_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/typing-text-loading.png"> Typing Text Loading Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('newtons-cradle_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/newtons-cradle.png"> Newtons Cradle Animation </a>
+                    <span>&rarr;</span>
+                </div>
+
+            </div>
+            <div class="column">
+                <h4 style="color: #262626; font-size: 24px;">Nuovi Tutorial, non in ordine con quelli prima</h4>
+                <div onclick="window.open('text-portrait_effects/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/text-portrait_effects.png"> Text Portrait Effects </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('typography-portrait_effects/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/typography-portrait_effects.png"> Typography Portrait Effects </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('text-parallax-portrait_effects/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/text-parallax-portrait_effects.png"> Text Portrait and Parallax Effects </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('menu-hover_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/menu-hover.png"> Menu Hover Animation </a>
+                    <span>&rarr;</span>
+                </div>
+
+                <h4>Partendo dalla fine</h4>
+                <div onclick="window.open('rotating-image-gallery1/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/rotating-image-gallery1.png"> Rotating Image Gallery 1 </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('rotating-image-gallery2/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/rotating-image-gallery2.png"> Rotating Image Gallery 2 </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('404-page_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/404-page.png"> 404 Page Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('mini-calendar/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/mini-calendar.png"> Mini Calendar Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('flying-rocket1_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/flying-rocket1.png"> Flying Rocket 1 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('flying-rocket2_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/flying-rocket2.png"> Flying Rocket 2 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('number-spinner_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/number-spinner.png"> Number Spinner 1 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('number-spinner-2_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/number-spinner-2.png"> Number Spinner 2 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+
+
+                <h4 style="color: #262626; font-size: 24px;">CHECKBOX, &nbsp; RADIO BUTTONS, &nbsp; LISTS</h4>
+                <div onclick="window.open('glowing-checkbox1_effects/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/glowing-checkbox1.png"> Glowing Checkbox 1 Effects </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('glowing-checkbox2_effects/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/glowing-checkbox2.png"> Glowing Checkbox 2 Effects </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('checkbox-1_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/checkbox-1.png"> Checkbox 1 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('checkbox-2_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/checkbox-2.png"> Checkbox 2 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('checkbox-3_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/checkbox-3.png"> Checkbox 3 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('checkbox-4_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/checkbox-4.png"> Checkbox 4 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('checkbox-list1_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/checkbox-list1.png"> Checkbox List 1 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('checkbox-list2_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/checkbox-list2.png"> Checkbox List 2 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('star-rating_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/star-rating.png"> Star Rating Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('radio-buttons-1_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/radio-buttons-1.png"> Radio Buttons 1 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('checkbox-list-1_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/checkbox-list-1.png"> Checkbox List 1 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('todo-list_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/todo-list.png"> To Do List Animation </a>
+                    <span>&rarr;</span>
+                </div>
+
+                <h4 style="color: #262626; font-size: 24px;">SOCIAL MEDIA ICON ANIMATIONS</h4>
+                <div onclick="window.open('sliding-social-media_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/sliding-social-media.png"> Sliding Social Media Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('sharing-button_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/sharing-button.png"> Sharing Button Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('sharing-card_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/sharing-card.png"> Sharing Card Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('action-button_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/action-button.png"> Action Button Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('social-media-icon1_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/social-media-icon1.png"> Social Media Icon 1 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('social-media-icon2_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/social-media-icon2.png"> Social Media Icon 2 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('social-media-icon3_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/social-media-icon3.png"> Social Media Icon 3 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('social-media-icon4_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/social-media-icon4.png"> Social Media Icon 4 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('social-media-icon5_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/social-media-icon5.png"> Social Media Icon 5 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('social-media-icon6_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/social-media-icon6.png"> Social Media Icon 6 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('social-media-icon7_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/social-media-icon7.png"> Social Media Icon 7 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('social-media-icon8_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/social-media-icon8.png"> Social Media Icon 8 Animation </a>
+                    <span>&rarr;</span>
+                </div>
+
+
+
+                <h4>Altri PROGETTI</h4>
+                <div onclick="window.open('uva_prova/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/grapes.png"> Quadro Uva </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('disco-pixels/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/disco-pixels.png"> Disco Pixels </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('pixels/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/pixels.png"> Pixel Art </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('space-toggle/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/space-toggle.png"> Space Toggle </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('responsive-website-design-1/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/responsive-website-design-1.png"> responsive-website-design-1 </a>
+                    <span>&rarr;</span>
+                </div>
+
+
+                <div onclick="window.open('_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/.png">  Animation </a>
+                    <span>&rarr;</span>
+                </div>
+                <div onclick="window.open('_animation/index.html', '_blank')" class="casella exterior">
+                    <a><img src="img/.png">  Animation </a>
+                    <span>&rarr;</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

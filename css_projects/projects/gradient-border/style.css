@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid transparent;
+    border-image: linear-gradient(-45deg, #ff0, #f0f, #f00, #00f, #0f0);
+    border-image-slice: 1;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    top: 180px;
+    position: relative;
+}
+
+p {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    top: 180px;
+    position: relative;
+}

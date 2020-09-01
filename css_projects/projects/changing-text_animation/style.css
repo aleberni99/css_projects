@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #5245d8;
+}
+
+h1 {
+    margin: 250px 0 0 400px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 5em;
+    text-shadow: 0 2px 0 rgba(0,0,0,.5);
+}
+
+span:before {
+    content: 'HTML';
+    animation: animate infinite 5s;
+}
+
+@keyframes animate {
+    0% {
+        content: 'HTML';
+    }
+
+    25% {
+        content: 'CSS';
+    }
+
+    50% {
+        content: 'JavaScript';
+    }
+
+    75% {
+        content: 'Angular';
+    }
+
+    100% {
+        content: 'Ionic';
+    }
+}

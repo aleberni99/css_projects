@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+    background-image: url("pattern3.jpg");
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 5px 5px #000;
+}
+
+@media only screen and (max-width: 1200px) {
+    h2 {
+        font-size: 24px;
+    }
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 5px 5px #000;
+}
+
+@media only screen and (max-width: 1200px) {
+    h4 {
+        font-size: 16px;
+    }
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+@media only screen and (max-width: 1100px) {
+    div.row {
+        display: inline;
+    }
+}
+
+.casella {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid white;
+    padding: 10px;
+    margin: 5px;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .casella {
+        width: 700px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Special Elite', cursive;
+    display: flex;
+    align-items: center;
+}
+
+.items {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Special Elite', cursive;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+span {
+    float: right;
+    text-align: right;
+    color: white;
+    font-family: 'Special Elite', cursive;
+}
+
+.casella:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.casella:hover a {
+    color: #262626;
+    font-weight: bold;
+    font-size: large;
+}
+
+.casella:hover .items {
+    color: #262626;
+    font-weight: bold;
+    font-size: large;
+}
+
+.casella:hover span {
+    color: #262626;
+    font-weight: bold;
+    font-size: large;
+}
+
+.casella:hover img {
+    transform: scale(1.1);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding-right: 5%;
+}

@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(1536px / 6); /* 1536px è il width della spritestrip.png e 6 è il numero di steps */
+    height: 256px; /* 256px è l'height della spritestrip.png */
+    background: url(spritestrip.png);
+    animation: animate 1s  steps(6) infinite;
+}
+
+@keyframes animate {
+    from {
+        background-position: 0;
+    }
+
+    to {
+        background-position: -1536px;
+    }
+}

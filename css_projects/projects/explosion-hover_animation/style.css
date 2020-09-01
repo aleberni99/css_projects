@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #2b2e45;
+}
+
+.dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: rgba(176, 255, 95, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(176, 255, 95, 1),
+                0 0 40px rgba(176, 255, 95, 1),
+                0 0 60px rgba(176, 255, 95, 1),
+                0 0 80px rgba(176, 255, 95, 1);
+    transition: 1s;
+}
+
+.dot:hover {
+    box-shadow: 0 0 0 30px rgba(176, 255, 95, .1),
+                0 0 0 60px rgba(176, 255, 95, .1),
+                0 0 0 120px rgba(176, 255, 95, .1),
+                0 0 0 240px rgba(176, 255, 95, .1),
+                0 0 0 480px rgba(176, 255, 95, .1),
+                0 0 0 960px rgba(176, 255, 95, .1);
+}

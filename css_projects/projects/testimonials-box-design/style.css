@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    padding: 160px 0 0;
+    background: #262626;
+}
+
+section .card {
+    position: relative;
+    max-width: 350px;
+    height: auto;
+    padding: 50px 20px;
+    background: #ff0;
+    border-radius: 10px;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    animation: animate 2s linear infinite;
+    overflow: hidden;
+}
+
+section .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    transform: skewX(-5deg);
+    background: rgba(255, 255, 255, .2);
+}
+
+section .col-sm-4:nth-child(1) .card {
+    background: #3fc012 url(sparkles.png);
+}
+
+section .col-sm-4:nth-child(2) .card {
+    background: #f1206a url(sparkles.png);
+}
+
+section .col-sm-4:nth-child(3) .card {
+    background: #0f84d4 url(sparkles.png);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 -64px;
+    }
+}
+
+section .card .image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 4px solid #fff;
+    z-index: -1;
+}
+
+img {
+    width: 105px;
+    height: 105px;
+    margin: -8px;
+}
+
+section .card .text {
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 50px;
+}
+
+section .card .text:before {
+    content: url(quote.png);
+    position: absolute;
+    top: -10px;
+    left: 0;
+    opacity: .3;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section .card .details h2 {
+    position: relative;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    z-index: 1;
+}
+
+section .card .details h2 span {
+    font-size: 18px;
+
+}

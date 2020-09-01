@@ -1,0 +1,120 @@
+/* VARIABLES */
+
+:root {
+    --color-brown: #8f746c;
+    --color-grey-light: #eee;
+    --color-grey-dark: #181818;
+
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+/* BIKES WEBSITE CSS*/
+
+body {
+    margin: 0;
+    font-family: arial;
+    background: var(--color-grey-light);
+}
+
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+    background: var(--color-white);
+}
+
+#main-navigation {
+    background: var(--color-grey-dark);
+    padding: 10px;
+}
+
+#main-navigation ul {
+    text-align: right;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+#main-navigation li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#main-navigation a {
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 6px;
+}
+
+#main-navigation a:hover {
+    background: var(--color-brown);
+    border-radius: 4px;
+}
+
+#main-navigation a.current {
+    background: var(--color-brown);
+    border-radius: 4px;
+}
+
+#lead-banner img {
+    width: 100%;
+}
+
+#shop {
+    margin: 30px 0;
+    text-align: center;
+}
+
+#shop h2.product-name {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+#shop span.price {
+    font-size: 58px;
+    display: block;
+}
+
+#shop a.add-to-bag {
+    display: block;
+    color: var(--color-brown);
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 0px;
+    border: 2px solid var(--color-brown);
+    width: 210px;
+    margin: 20px auto;
+}
+
+#shop a.add-to-bag:hover {
+    background: var(--color-brown);
+    color: var(--color-white);
+}
+
+#banner img {
+    width: 100%;
+}
+
+.footer {
+    background: var(--color-grey-dark);
+    padding: 10px;
+    color: var(--color-white);
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

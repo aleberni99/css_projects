@@ -1,0 +1,72 @@
+body {
+    background: #533872;
+    color: #fff;
+    font-family: verdana;
+}
+
+form { 
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20% auto;
+}
+
+form label { /* Testo: Password */
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+form input { /* Input */
+    margin: 0 10px;
+    padding: 8px 8px 6px;
+    font-size: 20px;
+    border: 0;
+    color: #444;
+}
+
+/* Tooltip Styles */
+
+.tooltip { /* Stile span "?"*/
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 12px;
+    border-radius: 100%;
+    font-size: 20px;
+    cursor: help; /* Cursore con piccolo "?"*/
+}
+
+.tooltip::before,
+.tooltip::after { /*  */
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.tooltip::before { /* Crea il piccolo triangolo sopra "?" */
+    content: "";
+    border-width: 10px 8px 0 8px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.3) transparent transparent transparent;
+    top: -20px;
+    margin-left: -8px;
+}
+
+.tooltip::after { /* Crea il testo che compare e la vignetta intorno */
+    /* content: "testing testing 1 2 3"; */
+    content: attr(data-tooltip);
+    background: rgba(0, 0, 0, 0.3);
+    top: -20px;
+    font-size: 14px;
+    width: 300px;
+    margin-left: -150px;
+    padding: 14px;
+    color: #eee;
+    border-radius: 10px;
+    transform: translateY(-100%);
+}
+
+.tooltip:hover::before, 
+.tooltip:hover::after { /* Hover effects */
+    opacity: 1;
+}

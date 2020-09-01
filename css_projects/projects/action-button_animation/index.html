@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Action Button Animation (Vanilla Javascript)</title>
+    </head>
+    <body>
+        <div class="action" onclick="actionToggle();">
+            <span>+</span>
+            <ul>
+                <li><img src="facebook.png" alt="facebook">Share on Facebook</li>
+                <li><img src="instagram.png" alt="instagram">Share on Instagram</li>
+                <li><img src="twitter.png" alt="twitter">Share on Twitter</li>
+                <li><img src="linkedin.png" alt="linkedin">Share on Linkedin</li>
+                <li><img src="whatsapp.png" alt="whatsapp">Share on Whatsapp</li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            function actionToggle() {
+                var action = document.querySelector('.action');
+                action.classList.toggle('active')
+            }
+        </script>
+    </body>
+</html>

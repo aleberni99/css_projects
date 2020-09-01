@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; /* sottolinea l'ereditarietà */
+}
+
+html {
+    //this defines what 1rem is
+    font-size: 62.5%; // 1rem=10px 10px/16px=62.5% --> serve per i REM (non funzionano con internet explorer)
+
+    //Primo esempio classico
+    // @media (max-width: 600px) {
+    //     font-size: 50%;
+    // }
+
+    //Secondo esempio usando @mixin
+    // @include respond-phone {
+    //     font-size: 50%;
+    // }
+
+    //Terzo esempio usando @mixin e @if
+    // @include respond(phone) {
+    //     font-size: 50%; //eliminata perchè ripetitiva
+    // }
+    @include respond(tab-land) { //width<1200?
+        font-size: 56.25%; //1rem = 9px, 9/16 = 56.25%
+    }
+    @include respond(tab-port) { //width<900?
+        font-size: 50%; //1rem = 8px, 8/16 = 50%
+    }
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12px, 12/16 = 75%
+    }
+}
+
+body {
+    box-sizing: border-box;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}

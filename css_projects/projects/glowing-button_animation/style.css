@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #262626;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 90px;
+    /* background: # ; */
+    border: 4px solid #333;
+    font-size: 48px;
+    color: #333;
+    text-align: center;
+    line-height: 90px;
+    border-radius: 90px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    transition: .5s;
+}
+
+input {
+    -webkit-appearance: none;
+    transition: .5s;
+}
+
+input:hover + span {
+    color: #444;
+    border: 4px solid #444;
+}
+
+input:checked + span {
+    color: #00fff5;
+    border: 4px solid #00fff5;
+    text-shadow: 0 0 5px #00fff5;
+    box-shadow: 0 0 20px #00fff5, inset 0 0 20px #00fff5;
+}

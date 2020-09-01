@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #222430;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    /* background: #0c1025; */
+}
+
+.loader span {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    animation: animate 2s linear infinite;
+}
+
+.loader span:nth-child(1) {
+    background: #409fff;
+    animation-delay: 0s;
+}
+.loader span:nth-child(2) {
+    background: #007fff;
+    animation-delay: -0.667s;
+}
+.loader span:nth-child(3) {
+    background: #0066cc;
+    animation-delay: -1.333s;
+}
+
+@keyframes animate {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    12.5% {
+        top: 0;
+        left: 50%;
+    }
+
+    25% {
+        top: 0;
+        left: 50%;
+    }
+
+    37.5% {
+        top: 50%;
+        left: 50%;
+    }
+
+    50% {
+        top: 50%;
+        left: 50%;
+    }
+
+    62.5% {
+        top: 50%;
+        left: 0;
+    }
+
+    75% {
+        top: 50%;
+        left: 0;
+    }
+
+    87.5% {
+        top: 0;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+/* SECONDO LOADER */
+
+.loader2 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    /* background: #0c1025; */
+}
+
+.loader2 span {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    animation: animate 2s linear infinite;
+}
+
+.loader2 span:nth-child(1) {
+    background: #0066cc;
+    animation-delay: 0s;
+}
+.loader2 span:nth-child(2) {
+    background: #409fff;
+    animation-delay: -1s;
+}
+
+
+/* TERZO LOADER */
+
+.loader3 {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    /* background: #0c1025; */
+}
+
+.loader3 span {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    animation: animate 2s linear infinite;
+}
+
+.loader3 span:nth-child(1) {
+    background: #409fff;
+    animation-delay: 0s;
+}
+.loader3 span:nth-child(2) {
+    background: #007fff;
+    animation-delay: -0.5s;
+}
+.loader3 span:nth-child(3) {
+    background: #0066cc;
+    animation-delay: -1s;
+}
+.loader3 span:nth-child(4) {
+    background: #0052a3;
+    animation-delay: -1.5s;
+}

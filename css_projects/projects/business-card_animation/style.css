@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    position: absolute;
+    width: 110vw;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url("marble.jpg");
+    background-size: 100% auto;
+}
+
+.card {
+    position: relative;
+    width: 450px;
+    height:250px;
+    padding:10px 15px 15px 10px;
+    margin-top:50px;
+    border-radius: 2px;
+    background: url("texture.jpg");
+    background-size: cover;
+    box-shadow: 
+        /* top shadow */
+        0px -10px 10px rgba(0,0,0,0.2),
+        /* bottom shadow */
+        0px 10px 20px rgba(0,0,0,0.4),
+        /* left shadow */
+        -10px 0px 20px rgba(0,0,0,0.4),
+        /*right shadow */
+        10px 0px 20px rgba(0,0,0,0.4),
+        /* inner shadow */
+        inset 1px 1px 20px rgba(0,0,0,0.4)
+    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    background: url("gold.jpg");
+    background-size: contain;
+    mask: url("logo.png");
+    -webkit-mask: url("logo.png");
+}
+
+.company-text {
+    font-size: 26px;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    padding-top:20px;
+    color: transparent;
+    background: url("gold.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.1);
+}
+
+.card.back .left {
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    color:transparent;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.name-text {
+    font-size: 32px;
+    word-spacing: 8px;
+    background:url("silver.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: cover;
+}
+
+.role-text {
+    font-size: 18px;
+    background:url("gold.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: cover;
+}
+
+.card.back .right {
+    position: absolute;
+    width: 200px;
+    right: 10px;
+    bottom: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color:transparent;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    background:url("silver.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: cover;
+}
+
+.card.front {
+    transform: rotateZ(-7deg);
+    left: -15%;
+}
+
+.card.back {
+    transform: rotateZ(4deg);
+    left: 5%;
+    top: -2%;
+}
+
+.card:hover {
+    transform: scale(1.07);
+}
+
+.light {
+    position: absolute;
+    width: 110vw;
+    height: 110vh;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.5) 20%,rgba(255,255,255,0) 60%);
+    opacity: 0.4;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1 {
+    position: absolute; 
+    height: 20px;
+    width: 200px;
+    font-size: 10px !important;
+    background: #262626;
+    border-radius: 10px;
+    color: white;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.p2 {
+    position: absolute; 
+    height: 20px;
+    width: 150px;
+    font-size: 10px !important;
+    background: #262626;
+    border-radius: 10px;
+    color: white;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.center a {
+    color: white;
+}

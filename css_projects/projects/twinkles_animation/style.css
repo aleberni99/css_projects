@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #003444;
+}
+
+.center {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: url(); */
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5), 0 0 0 15px rgba(2, 35, 54, 1);
+}
+
+ul {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    animation: rotate 5s linear infinite;
+}
+
+ul.cr1 {
+    top: 35%;
+    left: 15%;
+}
+
+ul.cr2 {
+    top: 25%;
+    left: 75%;
+
+}
+
+ul.cr3 {
+    top: 70%;
+    left: 85%;
+}
+
+ul.cr4 {
+    top: 50%;
+    left: 45%;
+
+}
+
+ul.cr5 {
+    top: 90%;
+    left: 40%;
+}
+
+ul.cr6 {
+    top: 10%;
+    left: 35%;
+}
+
+ul.cr7 {
+    top: 70%;
+    left: 10%;
+
+}
+
+ul.cr8 {
+    top: 90%;
+    left: 40%;
+}
+
+ul.cr9 {
+    top: 5%;
+    left: 90%;
+
+}
+
+ul.cr10 {
+    top: 60%;
+    left: 63%;
+}
+
+
+ul li {
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    list-style: none;
+}
+
+ul li:nth-child(1) {
+    transform: rotate(0deg);
+}
+ul li:nth-child(2) {
+    transform: rotate(90deg);
+}
+ul li:nth-child(3) {
+    transform: rotate(45deg);
+}
+ul li:nth-child(4) {
+    transform: rotate(-45deg);
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #003444;
+    transform: scaleX(.5);
+    animation: animate 1s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: scaleX(.5);
+    }
+
+    50% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(.5);
+    }
+}

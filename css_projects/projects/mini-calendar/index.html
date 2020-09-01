@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Mini Calendar (Vanilla Javascript)</title>
+    </head>
+    <body>
+        <div class="calendar">
+            <p id="monthName"></p>
+            <p id="dayName"></p>
+            <p id="dayNumber"></p>
+            <p id="year"></p>
+        </div>
+
+        <script>
+            const lang = navigator.language;
+            let date = new Date();
+
+            let dayNumber = date.getDate();
+            let month = date.getMonth();
+            let dayName = date.toLocaleString(lang,{weekday: 'long'})
+            let monthName = date.toLocaleString(lang,{month: 'long'})
+            let year = date.getFullYear()
+
+            document.getElementById('monthName').innerHTML = monthName;
+            document.getElementById('dayName').innerHTML = dayName;
+            document.getElementById('dayNumber').innerHTML = dayNumber;
+            document.getElementById('year').innerHTML = year;
+        </script>
+    </body>
+</html>

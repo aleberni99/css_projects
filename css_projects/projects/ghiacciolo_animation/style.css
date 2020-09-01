@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gelato {
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    background-color: orange;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 100;
+}
+
+.gelato::before {
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 20px;
+    left: 55px;
+    top: 50px;
+    background-color: rgba(255, 140, 0, 0.4);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 100;
+}
+
+.gelato::after {
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 20px;
+    right: 55px;
+    top: 50px;
+    background-color: rgba(255, 140, 0, 0.4);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 100;
+}
+
+.gocce1 {
+    position: absolute;
+    height: 150px;
+    width: 20px;
+    z-index: 10;
+    background-color: orange;
+    top: 150px;
+    left: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    animation: 3s animate linear infinite;
+    animation-delay: 1s;
+}
+
+.gocce2 {
+    position: absolute;
+    height: 150px;
+    width: 10px;
+    z-index: 10;
+    background-color: orange;
+    top: 150px;
+    left: 55px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    animation: 3s animate linear infinite;
+    animation-delay: 3s;
+}
+
+.gocce3 {
+    position: absolute;
+    height: 150px;
+    width: 20px;
+    z-index: 10;
+    background-color: orange;
+    top: 150px;
+    right: 70px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    animation: 3s animate linear infinite;
+    animation-delay: 2s;
+}
+
+.gocce4 {
+    position: absolute;
+    height: 150px;
+    width: 10px;
+    z-index: 10;
+    background-color: orange;
+    top: 150px;
+    right: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    animation: 3s animate linear infinite;
+    animation-delay: 4s;
+}
+
+.gocce::after {
+    
+}
+
+@keyframes animate {
+    0% {
+        top: 150px;
+    }
+
+    100% {
+        top: 200px;
+    }
+}
+
+.legno {
+    position: absolute;
+    height: 150px;
+    width: 50px;
+    z-index: 1;
+    background-color: peru;
+    top: 570px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

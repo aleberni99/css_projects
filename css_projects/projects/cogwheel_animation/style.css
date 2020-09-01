@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #8b7cff;
+}
+
+/* PRIMA RUOTA - Si before, Si after*/
+.ul1 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background: #fff;
+}
+
+.ul1:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    background: #8b7cff;
+    border-radius: 50%;
+}
+
+.ul1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    background: #8b7cff;
+    border-radius: 50%;
+    z-index: 1;
+    border: 8px solid #efefef;
+}
+
+.ul1 li {
+    list-style: none;
+    /* float: left; */
+    width: 20px;
+    height: 80px;
+    background: #fff;
+    margin: 0 1px;
+    animation: animate 2s linear infinite;
+    transform-origin: bottom;
+    position: absolute;
+    left: 40%;
+    top: -20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ul1 li:nth-child(1) {
+    animation-delay: .2s;
+}
+.ul1 li:nth-child(2) {
+    animation-delay: .4s;
+}
+.ul1 li:nth-child(3) {
+    animation-delay: .6s;
+}
+.ul1 li:nth-child(4) {
+    animation-delay: .8s;
+}
+.ul1 li:nth-child(5) {
+    animation-delay: 1s;
+}
+.ul1 li:nth-child(6) {
+    animation-delay: 1.2s;
+}
+.ul1 li:nth-child(7) {
+    animation-delay: 1.4s;
+}
+.ul1 li:nth-child(8) {
+    animation-delay: 1.6s;
+}
+.ul1 li:nth-child(9) {
+    animation-delay: 1.8s;
+}
+.ul1 li:nth-child(10) {
+    animation-delay: 2s;
+}
+
+
+/* SECONDA RUOTA - No before, No after*/
+.ul2 {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background: #fff;
+}
+
+.ul2 li {
+    list-style: none;
+    /* float: left; */
+    width: 20px;
+    height: 80px;
+    background: #fff;
+    margin: 0 1px;
+    animation: animate 2s linear infinite;
+    transform-origin: bottom;
+    position: absolute;
+    left: 40%;
+    top: -20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.ul2 li:nth-child(1) {
+    animation-delay: .2s;
+}
+.ul2 li:nth-child(2) {
+    animation-delay: .4s;
+}
+.ul2 li:nth-child(3) {
+    animation-delay: .6s;
+}
+.ul2 li:nth-child(4) {
+    animation-delay: .8s;
+}
+.ul2 li:nth-child(5) {
+    animation-delay: 1s;
+}
+.ul2 li:nth-child(6) {
+    animation-delay: 1.2s;
+}
+.ul2 li:nth-child(7) {
+    animation-delay: 1.4s;
+}
+.ul2 li:nth-child(8) {
+    animation-delay: 1.6s;
+}
+.ul2 li:nth-child(9) {
+    animation-delay: 1.8s;
+}
+.ul2 li:nth-child(10) {
+    animation-delay: 2s;
+}
+
+/* TERZA RUOTA - Si before, No after */
+.ul3 {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background: #fff;
+}
+
+.ul3:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    background: #8b7cff;
+    border-radius: 50%;
+}
+
+.ul3 li {
+    list-style: none;
+    /* float: left; */
+    width: 20px;
+    height: 80px;
+    background: #fff;
+    margin: 0 1px;
+    animation: animate 2s linear infinite;
+    transform-origin: bottom;
+    position: absolute;
+    left: 40%;
+    top: -20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.ul3 li:nth-child(1) {
+    animation-delay: .2s;
+}
+.ul3 li:nth-child(2) {
+    animation-delay: .4s;
+}
+.ul3 li:nth-child(3) {
+    animation-delay: .6s;
+}
+.ul3 li:nth-child(4) {
+    animation-delay: .8s;
+}
+.ul3 li:nth-child(5) {
+    animation-delay: 1s;
+}
+.ul3 li:nth-child(6) {
+    animation-delay: 1.2s;
+}
+.ul3 li:nth-child(7) {
+    animation-delay: 1.4s;
+}
+.ul3 li:nth-child(8) {
+    animation-delay: 1.6s;
+}
+.ul3 li:nth-child(9) {
+    animation-delay: 1.8s;
+}
+.ul3 li:nth-child(10) {
+    animation-delay: 2s;
+}
+
+/* QUARTA RUOTA - No before, Si after */
+.ul4 {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background: #fff;
+}
+
+.ul4:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    background: #8b7cff;
+    border-radius: 50%;
+    z-index: 1;
+    border: 8px solid #efefef;
+}
+
+.ul4 li {
+    list-style: none;
+    /* float: left; */
+    width: 20px;
+    height: 80px;
+    background: #fff;
+    margin: 0 1px;
+    animation: animate 2s linear infinite;
+    transform-origin: bottom;
+    position: absolute;
+    left: 40%;
+    top: -20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.ul4 li:nth-child(1) {
+    animation-delay: .2s;
+}
+.ul4 li:nth-child(2) {
+    animation-delay: .4s;
+}
+.ul4 li:nth-child(3) {
+    animation-delay: .6s;
+}
+.ul4 li:nth-child(4) {
+    animation-delay: .8s;
+}
+.ul4 li:nth-child(5) {
+    animation-delay: 1s;
+}
+.ul4 li:nth-child(6) {
+    animation-delay: 1.2s;
+}
+.ul4 li:nth-child(7) {
+    animation-delay: 1.4s;
+}
+.ul4 li:nth-child(8) {
+    animation-delay: 1.6s;
+}
+.ul4 li:nth-child(9) {
+    animation-delay: 1.8s;
+}
+.ul4 li:nth-child(10) {
+    animation-delay: 2s;
+}
